@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h2>SHOE HUB</h2>
+    <h3>B141/24803/2022 JANE NGUGI</h3> 
+</header>
+<nav>
+    <a href="#Home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#Register">Register</a>
+    <a href="#FIND US">FIND US</a>
+</nav>
+
+    <body>
+        
+        
+        <section id="Home"></section>
+    <h2>Home</h2>
+    <P> To Step out in style, and total confidence. Start exploring our comfort collection.<br>
+        Wearing a pair of nice shoes instantly boosts confidence, elevating not just your outfit but also your mood.<br>
+        With nice shoes, you carry yourself with grace, knowing you’re putting your best foot forward—literally. </P>
+    
+   <div>
+    <section id="Products"></section>
+    <h2>Products</h2>
+    <div id="products">
+        
+        <div class="product">
+            <span>Safari- KES 3500</span>
+            <img src="pic1.jpeg" alt="Item 1 Image" width="450">
+            <button onclick="addToCart('Safari', 3500)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Unique- KES 2200</span>
+            <img src="pic2.jpeg" alt="Item 2 Image" width="450">
+            <button onclick="addToCart('Unique', 2200)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Comfy- KES 1700</span>
+            <img src="pic3.jpeg" alt="Item 3 Image" width="450">
+            <button onclick="addToCart('Comfy', 1700)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Clarks- KES 3700</span>
+            <img src="imagj3.jpg" alt="Item 4 Image" width="450"> 
+            <button onclick="addToCart('Clarks', 3700)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Heels- KES 2700</span>
+            <img src="imagj2.jpg" alt="Item 2 Image" width="200">
+            <button onclick="addToCart('Heels', 2700)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <span>Samba- KES 3900</span>
+            <img src="picjj.jpg" alt="Item 2 Image" width="250">
+            <button onclick="addToCart('Samba', 3900)">Add to Cart</button>
+        </div>
+    </div>
+</div>
+<h2>Cart</h2>
+ <div class="Cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="total">Total: KES <span id="cart-total">0</span></div>
+
+</div>
+<h2>Register</h2>
+<section id="Register"></section>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="phone">phone number:</label><br>
+  <input type="tel" id="phone" name="phone" placeholder="07-***-***"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+    <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="Submit">
+  </form>
+  
+  <section id="checkout" class="container"></section>
+    <h2>MPESA</h2>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+<section id="FIND US"></section>
+<h2>FIND US </h2>
+<div class="contact-info">
+    <div>
+        <i class="fas fa-phone"></i>
+        <strong>Phone:</strong> <a href="tel:+254717999886">+254 717 999 886</a>
+    </div>
+
+    <div>
+        <i class="fas fa-envelope"></i>
+        <strong>Email:</strong> <a href="mailto:info@shoehub.com">info@shoehub.com</a>
+    </div>
+
+    <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <strong>Address:</strong> 123 Chiromo Street, Nairobi City, SC 12345
+    </div>
+
+    <div>
+        <i class="fas fa-clock"></i>
+        <strong>Delivery Hours:</strong> Mon-Sat, 9 AM - 5 PM
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
